@@ -1,0 +1,51 @@
+<Patient xmlns="http://hl7.org/fhir">
+   <extension url="http://fhir.org/guides/argonaut/StructureDefinition/argo-birthsex">
+      <valueCode value="M"/><!-- <<<<<<<<< Change this value -->
+   </extension>
+   <extension url="http://fhir.org/guides/argonaut/StructureDefinition/argo-race">
+      <extension url="text">
+         <valueString value="White"/><!-- <<<<<<<< Change this value -->
+      </extension>
+      <extension url="ombCategory">
+         <valueCoding>
+            <system value="http://hl7.org/fhir/v3/Race"/>
+            <code value="2106-3"/> <!-- <<<<<<<< Change this value -->
+            <display value="White"/> <!-- <<<<<<<< Change this value -->
+         </valueCoding>
+      </extension>
+   </extension>
+   <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity">
+      <extension url="text">
+         <valueString value="Non Hispanic or Latino"/> <!-- <<<<<<<< Change this value -->
+      </extension>
+      <extension url="ombCategory"> <!-- <<<<<<<< Change this value -->
+         <valueCoding>
+            <system value="http://hl7.org/fhir/ValueSet/v3-Ethnicity"/>
+            <code value="2186-5"/> <!-- <<<<<<<< Change this value -->
+            <display value="Non Hispanic or Latino"/>
+         </valueCoding>
+      </extension>
+   </extension>
+   <identifier>
+      <system value="http://example.org/pids"/>
+      <value value="1234"/> <!-- <<<<<<<< Change this value -->
+   </identifier>
+   <active value="true"/>
+   <name>
+      <family value="Haas"/> <!-- <<<<<<<< Change this value -->
+      <given value="Eric"/>  <!-- <<<<<<<< Change this value -->
+      <given value="M"/>  <!-- <<<<<<<< Change this value -->
+   </name>
+   <gender value="male"/>  <!-- <<<<<<<< Change this value -->
+   <birthDate value="1964-06-19"/>  <!-- <<<<<<<< Change this value -->
+   <communication>
+      <language>
+         <coding>
+            <system value="urn:ietf:bcp:47"/>
+            <code value="en"/>  <!-- <<<<<<<< Change this value -->
+            <display value="English"/>  <!-- <<<<<<<< Change this value -->
+         </coding>
+         <text value="English"/>  <!-- <<<<<<<< Change this value -->
+      </language>
+   </communication>
+</Patient>
